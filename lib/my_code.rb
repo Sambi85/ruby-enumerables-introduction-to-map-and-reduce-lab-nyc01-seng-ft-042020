@@ -85,7 +85,7 @@ if source_array[i] == TRUE
  result = TRUE
  
 else
-  result = 0
+  result = FALSE
 end
   
 i += 1
