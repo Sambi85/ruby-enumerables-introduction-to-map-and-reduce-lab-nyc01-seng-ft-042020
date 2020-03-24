@@ -58,10 +58,6 @@ end
 
 
 def reduce_to_all_true(source_array)
- 
-### [1, 2, true, "razmatazz", false]
-###  [1, 2, true, "razmatazz"]
- 
 i = 0
 
 while i < source_array.length do
@@ -76,11 +72,23 @@ end
   
 i += 1
 end
-pp result
+result
 end
 
 def reduce_to_any_true(source_array)
+i = 0
 
+while i < source_array.length do
+source_array[i]
 
+if source_array[i] == TRUE
+ result = TRUE
+ 
+else
+  result = 0
 end
-
+  
+i += 1
+end
+result
+end
